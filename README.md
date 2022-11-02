@@ -2,6 +2,11 @@
 
 This application implements basic features for a ToDo list to demonstrate authentication and authorization-based rendering of UI components, along with pagination and use of Mantine UI components and styling.
 
+## Deployed links
+
+- Lab 31 Codesandbox - [Codesandbox Lab 31](https://codesandbox.io/p/github/brandenge/resty/lab-26?file=%2FREADME.md)
+- Lab 32 Codesandbox - [Codesandbox Lab 32](https://codesandbox.io/p/github/brandenge/resty/lab-27?file=%2FREADME.md)
+
 ## Business Requirements
 
 The To Do Manager application has the following overall requirements:

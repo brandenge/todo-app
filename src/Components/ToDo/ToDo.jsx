@@ -19,16 +19,16 @@ const ToDo = () => {
     setList([...list, item]);
   }
 
-  function deleteItem(id) {
-    const items = list.filter( item => item.id !== id );
-    setList(items);
-  }
+  // function deleteItem(id) {
+  //   const items = list.filter( item => item.id !== id );
+  //   setList(items);
+  // }
 
   function toggleComplete(id) {
 
     const items = list.map( item => {
       if ( item.id === id ) {
-        item.complete = ! item.complete;
+        item.complete = !item.complete;
       }
       return item;
     });
@@ -41,10 +41,10 @@ const ToDo = () => {
     let incompleteCount = list.filter(item => !item.complete).length;
     setIncomplete(incompleteCount);
     document.title = `To Do List: ${incomplete}`;
-    // linter will want 'incomplete' added to dependency array unnecessarily. 
-    // disable code used to avoid linter warning 
-    // eslint-disable-next-line react-hooks/exhaustive-deps 
-  }, [list]);  
+    // linter will want 'incomplete' added to dependency array unnecessarily.
+    // disable code used to avoid linter warning
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [list]);
 
   return (
     <>
